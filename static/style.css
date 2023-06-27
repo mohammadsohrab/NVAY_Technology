@@ -93,10 +93,6 @@ h5 a:hover {
 #servicesContents a:hover {
   color: #ffffff
 }
-
-.gallery {
-  background: rgba(161, 161, 161, 0.26);
-}
 .rating-xxs {
   font-size: 1em !important;
 }
@@ -423,10 +419,10 @@ body {
 .top-nav ul li a {
   color: #ffffff !important;
   font-size: 1em;
-  margin: 0 2em;
+  margin: 5px 2em;
   padding: 0;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 1px;
   border-right: none;
   text-transform: uppercase;
@@ -874,30 +870,62 @@ ul.dropdown-menu li:after {
 
 /*-- welcome --*/
 
-.welcome, .about-bottom, .features, .gallery, .testimonial, .team, .blog, .contact, .rate {
+.welcome, .about-bottom, .features, .testimonial, .team, .blog, .contact, .rate {
   padding: 4em 0;
 }
 
-.wthree-heading h2, .wthree-heading h3 {
+.gallery {
+  padding: 4em 0;
+  background-color: #f9fcff;
+  background-image: linear-gradient(147deg, #f9fcff 0%, #dee4ea 74%);
+}
+
+
+.wthree-heading h2{
   text-align: center;
-  color: #212121;
+  color: darkcyan;
   font-size: 3.5em;
   margin: 0;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 600;
   letter-spacing: 4px;
-  font-family: poppines;
+  font-family: 'poppines', sans-serif;
 }
 
-.wthree-heading h3#service{
+.wthree-heading h3{
   text-align: center;
-  color: rgb(214, 10, 10);
+  color: darkcyan;
+  font-size: 3em;
+  margin: 0 0 0 26px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 4px;
+  font-family: 'poppines', sans-serif;
+}
+
+.about-heading h3 {
+  text-align: center;
+  background: -webkit-linear-gradient(#ADA996, #EAEAEA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 3em;
   margin: 0;
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 4px;
-  font-family: poppines;
+  font-family: 'poppines', sans-serif;
+}
+
+
+.wthree-heading #service{
+  text-align: center;
+  color: #96b2af;
+  font-size: 3em;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 4px;
+  font-family: 'poppines', sans-serif;
 }
 
 .wthree-heading p, #modalContent div {
@@ -916,7 +944,7 @@ ul.dropdown-menu li:after {
 
 .w3-welcome-grid-info {
   padding: 1em;
-  border: solid 1px rgb(255, 0, 0);
+  border: solid 1px #96b2af;
   transition: 0.5s all;
   min-height: 380px;
   -webkit-transition: 0.5s all;
@@ -939,10 +967,10 @@ ul.dropdown-menu li:after {
 }
 
 .w3-welcome-grid-info p {
-  color: rgb(255, 0, 0);
+  color: rgb(82, 82, 82);
   font-size: .9em;
-  margin: 0;
-  line-height: 1.8em;
+  margin: 12px;
+  line-height: 1.9em;
 }
 
 .w3-welcome-grid-info a:focus, .w3-welcome-grid-info a:hover {
@@ -951,8 +979,8 @@ ul.dropdown-menu li:after {
 }
 
 .w3-welcome-grid-info:hover {
-  background: #d50a21;
-  border: solid 1px #d50a21;
+  background: #96b2af;
+  border: solid 1px #96b2af;
 }
 
 .w3-welcome-grid-info:hover p {
@@ -981,20 +1009,15 @@ ul.dropdown-menu li:after {
 .about-child {
   min-height: 205px;
 }
-.about-child h4 {
-  color: rgb(255, 0, 0);
+.about-child h3 {
+  background: -webkit-linear-gradient(#ADA996, #F2F2F2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .about-child p {
-  color: #FFFFFF;
+  color: #F2F2F2;
   
 }
-.about-child p:hover { 
-  font-size: large;
-  text-shadow: 1px 1px #000000;
-   
-}
-
-
 
 .w3ls-about-bottom-grids {
   margin: 4em 0 0 0;
@@ -1055,11 +1078,17 @@ ul.dropdown-menu li:after {
 .offer-right p {
   color: #999999;
   font-size: 16px;
-  margin: 0.8em;
+  text-shadow: 0 0 0 black;
+  margin: 1.8em;
   line-height: 1.3em;
   text-align: justify;
   font-weight: 400;
-  font-family:poppins ;
+  letter-spacing: 1px;
+  font-family:'poppins', sans-serif ;
+}
+
+.offer-right p strong{
+  color: darkcyan;
 }
 
 .align-center {
@@ -1813,6 +1842,11 @@ i.fa-envelope-o {
     min-height: 600px;
     padding: 4em 4em 4em 4em;
   }
+
+  .gallery{
+    background-color: #fefefe;
+    background-image: linear-gradient(299deg, #fefefe 12%, #008B8B 100%);
+  }
   
   .gallery-bg-text:after {
     width: 320px;
@@ -2306,6 +2340,7 @@ i.fa-envelope-o {
   .offer-left {
     min-height: 200px;
   }
+  }
   .gallery-bg-text:after {
     width: 245px;
     height: 110px;
@@ -2322,7 +2357,7 @@ i.fa-envelope-o {
     float: left;
   }
   .banner-info {
-    padding: 1em 0;
+    padding: 7em 0;
   }
   .callbacks_tabs {
     top: 92%;
