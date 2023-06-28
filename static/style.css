@@ -118,6 +118,7 @@ h2{
 {
     position: relative;
     display: block;
+    margin-top: 27px;
     box-sizing: border-box;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -399,7 +400,7 @@ body {
 }
 
 .top-nav ul {
-  padding-top: 10px;
+  padding-top: 16px;
   margin: 0;
   float: right;
 }
@@ -419,7 +420,7 @@ body {
 .top-nav ul li a {
   color: #ffffff !important;
   font-size: 1em;
-  margin: 5px 2em;
+  margin: 0px 2em;
   padding: 0;
   text-decoration: none;
   font-weight: 500;
@@ -1005,6 +1006,7 @@ ul.dropdown-menu li:after {
 
 .about-heading p {
   color: #FFFFFF;
+  font-size: 14px;
 }
 .about-child {
   min-height: 205px;
@@ -2365,7 +2367,6 @@ i.fa-envelope-o {
   .flip-container, .back {
     height: 366px;
   }
-}
 
 .sticky {
   position: fixed;

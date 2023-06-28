@@ -18,8 +18,11 @@ $(document).ready(function() {
   function stickHeader() {
     if (window.pageYOffset >= 2) {
       $('.header-left').addClass("sticky")
+      $(".w3layouts-logo h1 .brand-logo img").attr("src","../static/logoblack.png");
     } else {
       $('.header-left').removeClass("sticky");
+      $(".w3layouts-logo h1 .brand-logo img").attr("src","../static/logowhite.png");
+
     }
   }
   $().UItoTop({
@@ -46,16 +49,6 @@ $(document).ready(function() {
     before: function() {},
     after: function() {}
   });
-  $(window).on("scroll", function() {
-    console.log($(this).scrollTop())
-    if($(this).scrollTop() >= 5){
-      // set to new image
-      $(".w3layouts-logo h1 .brand-logo img").attr("src","../static/logoblack.png");
-    } else {
-      //back to default
-      $(".w3layouts-logo h1 .brand-logo img").attr("src","../static/logowhite.png");
-    }
-  })
 });
 
 
